@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShokesTra</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0 7rem;
+        background-color: rgb(255, 252, 243);
+    }
+    header{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1.3fr;
+        align-items: center;
+        padding: 2rem 0rem;
+    }
+    .nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 2.5rem;
+    }
+    .logo{
+        font-size: 28px;
+        font-weight: 800;
+        cursor: pointer;
+        
+    }
+    .nav p{
+        cursor: pointer;
+        /* width: 3rem; */
+        text-align: center;
+    }
+    .sign{
+        margin: auto;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        width: 15rem;
+        margin: 0 0 0 4rem;
+    }
+    button{
+        border: none;
+        background: none;
+        cursor: pointer;
+        text-align: center;
+    }
+    .up{
+        border-radius: 5px;
+        background-color: #e15b26;
+        color: #fff;
+        padding: 0.8rem 1.7rem;
+        font-weight: 600;
+    }
+    .body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 2rem 0 0;
+    }
+    .get{
+        font-size: 45px;
+        font-weight: 800;
+    }
+    span{
+        color:#e15b26;
+    }
+    .ateam{
+        color: grey;
+        font-size: 18px;
+        width: 88%;
+        text-align: justify;
+        margin: 2rem 0;
+    }
+    .discover{
+        border: 2px #9d7158 solid;
+        color: #9d7158;
+        padding: 1rem 2.3rem;
+        font-size: 20px;
+    }
+    .info{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 42rem;
+        margin: 5rem auto 3rem;
+        padding: 2rem ;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: rgba(156, 155, 155, 0.582) 1px 8px 13px -8px;
+    }
+    .select{
+        line-height: 2rem;
+        margin: 0 1rem 0 0;
+        align-items: center;
+    }
+    .two{
+        height: 2.5rem;
+        width: 7rem;
+        margin: 0.7rem 0 0 2.5rem;
+    }
+    select{
+        border: none;
+        color: #e15b26;
+        outline: 0;
+        font-weight: 800;
+        font-weight: 18px;
+        
+    }
+</style>
+<body>
+    
+    <header>
+        <div class="logo">ShokesTra</div>
+        <div class="nav">
+            <p>Home</p>
+            <p>About</p>
+            <p>Destination</p>
+            <p>Tour</p>
+            <p>Blog</p>
+        </div>
+        <div class="sign">
+            <button id="in">Log in</button>
+            <button class="up">Sign Up</button>
+        </div>
+    </header>
+    <div class="body">
+        <div>
+            <p class="get">Get Started With Your Exciting <span>Journey</span> With Us.</p>  
+            <p class="ateam">A Team of Experienced toursim professionals will provide you with the best advice and tips for your desired place</p>
+            <button class="discover">Discover Now</button>
+        </div>
+        <img src="./eaf46a92-e982-4ff4-bd5b-295964e25883 - Copy.jpg" alt="">
+    </div>
+    <div class="info">
+        <div class="select" id="location">
+            <select name="Location" id="">
+                <option value="Location">Location</option>
+            </select>
+            <p>Where are you going</p>
+        </div>
+        <div class="select" id="date">
+            <select name="Date" id="">
+                <option value="Date">Date</option>
+            </select>
+            <p>Where you will go</p>
+        </div>
+        <div class="select" id="guest">
+            <select name="Guest" id="">
+                <option value="Guest">Guest</option>
+            </select>
+            <p>Number of guests</p>
+        </div>
+        <button class="up two">Sign Up</button>
+
+    </div>
+</body>
+</html>
